@@ -1,15 +1,23 @@
 import cmath 
+import math 
   
 # Initializing real numbers 
-x = 5
-y = 3
+x = 1.0
+y = 1.0
   
 # converting x and y into complex number 
 z = complex(x,y); 
   
-# printing real and imaginary part of complex number 
-print ("The real part of complex number is : ",end="") 
-print (z.real) 
+# converting complex number into polar using polar() 
+w = cmath.polar(z) 
   
-print ("The imaginary part of complex number is : ",end="") 
-print (z.imag) 
+# printing modulus and argument of polar complex number 
+print ("The modulus and argument of polar complex number is : ",end="") 
+print (w) 
+  
+# converting complex number into rectangular using rect() 
+w = cmath.rect(1.4142135623730951, 0.7853981633974483) 
+  
+# printing rectangular form of complex number 
+print ("The rectangular form of complex number is : ",end="") 
+print (w) 
